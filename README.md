@@ -11,3 +11,6 @@ The code speaks for itself.
 Using GStreamer to open the stream via OpenCV VideoCapture Library Call.
 RTSP streams usually are compressed with H264. Therefore your decompression is sensitive for timing issues, like threads halted for some time.
 But using Nvidia Encoder Supported Graphics Cards Decompression of H264 Video Frames Processing is done at Real Time.
+
+# Compilation Command
+g++ main.cpp RTSPcam.cpp -o gstreamer_run `pkg-config --cflags --libs opencv4`
