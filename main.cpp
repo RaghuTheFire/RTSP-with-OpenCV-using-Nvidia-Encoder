@@ -9,7 +9,7 @@
 int main()
 {
     cv::Mat frame;
-    cv::namedWindow("RTSP Camera Grabber", cv::WINDOW_AUTOSIZE);
+    cv::namedWindow("RTSP REALTIME CAPTURE", cv::WINDOW_AUTOSIZE);
 #ifdef GSTREAMER
     std::string pipeline = "rtspsrc location=rtsp://admin:admin@172.196.128.155:554/videoinput_1:0/h264_1/media.stm latency=0 ! rtph264depay ! h264parse ! omxh264dec ! nvvidconv ! videoconvert ! video/x-raw, format=BGR ! appsink";
     RTSPcam cam(pipeline, cv::CAP_GSTREAMER);
