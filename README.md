@@ -1,5 +1,5 @@
 # RTSP-with-OpenCV-using-Nvidia-Encoder
-RTSP - streams in OpenCV via GSTREAMER and Nvidia Encoder  (with neglectable latency)
+Capturing RTSP-streams in OpenCV via GSTREAMER and Nvidia Encoder  (with neglectable latency)
 
 It is a known issue with RTSP streams and time-consuming algorithms such as deep learning frameworks. You're getting out of sync if individual frames take longer than your stream's frame rate to process. There is an increasing delay between reality and the captured images.
 
